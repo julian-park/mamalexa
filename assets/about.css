@@ -3,11 +3,11 @@
 	height:45px;
 	padding:5px 0px;
   	padding-left: 10px;
-	font-size: 24px;
-  	color: #ffffff;
-	letter-spacing:1px;
+	font-size: 34px;
+  	color: white;
+	letter-spacing:4px;
 	background: none;
-  border: none;
+  	border: none;
 	margin-top:30px;
 
   -webkit-transition:all .1s ease-in-out;
@@ -15,4 +15,8 @@
 	-ms-transition:all .1s ease-in-out;
 	-o-transition:all .1s ease-in-out;
 	transition:all .1s ease-in-out;}
+}
+
+.text_box {
+	width: 500px;
 }
