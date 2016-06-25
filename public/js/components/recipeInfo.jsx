@@ -1,9 +1,15 @@
 
-var RecipeInfo = React.createClass({
-  getInitialState: function() {
-    return {currentStep: 0};
-  },
-  render: function() {
+class RecipeInfo extends React.Component {
+
+  constructor (props) {
+    super(props);
+
+    this.state = {
+      currentStep: 0
+    };
+  }
+
+  render () {
     return (
       <div>
         <h1> {this.props.recipeData.recipeName} </h1>
@@ -30,7 +36,7 @@ var RecipeInfo = React.createClass({
       </div>
     );
   }
-});
+}
 
 
 var recipeData = {
