@@ -1,4 +1,3 @@
-
 class RecipeInfo extends React.Component {
 
   constructor (props) {
