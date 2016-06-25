@@ -1,15 +1,16 @@
 
-var HelloMessage = React.createClass({
+var RecipeInfo = React.createClass({
   getInitialState: function() {
     return {currentStep: 0};
   },
   render: function() {
     return (
       <div>
+        <h1> {this.props.recipeData.recipeName} </h1>
         <h1> INGREDIENTS </h1>
         <ul>
-          {this.props.recipeData.ingredients.map((item)=>{
-            return (<li> {item} </li>)
+          {this.props.recipeData.ingredients.map((item, i)=>{
+            return (<li key={i}> {item} </li>)
           })}
         </ul>
         <h1> STEPS </h1>
@@ -17,8 +18,8 @@ var HelloMessage = React.createClass({
           {this.props.recipeData.steps.map((item, i)=>{
             var text = "Step #" + i + ": " + item;
             return (i === this.state.currentStep ? 
-              <li> <h2> {text} </h2> </li> : 
-              <li> {text} </li>);
+              <li key={i}> <h2> {text} </h2> </li> : 
+              <li key={i}> {text} </li>);
           })}
         </ul>
         <button 
@@ -42,7 +43,9 @@ var recipeData = {
   steps: ['do something', 'do something else', 'youre done']
 }
 
+// some script to generate recipe data here!
+
 ReactDOM.render(
-  <HelloMessage recipeData={recipeData} />,
+  <RecipeInfo recipeData={recipeData} />,
   document.getElementById('recipeInfo')
 );
