@@ -1,5 +1,6 @@
 // Node packages
-var app = require('express')();
+var express = require('express');
+var app = express();
 // var db = require('mysql');
 var bodyParser = require('body-parser');
 var multer = require('multer');
@@ -8,6 +9,7 @@ var multer = require('multer');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(multer({dest:'./uploads/'}).single('singleInputFileName'));
+app.use(express.static('.'));
 
 function main() {
     app.post("/", function(req, res) {
