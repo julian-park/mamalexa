@@ -2,8 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Mamalexa</title>
+    <title>Mamalexa | About</title>
     <link rel="stylesheet" type="text/css" href="assets/main.css">
+    <!-- <link rel="stylesheet" type="text/css" href="assets/about.css"> -->
     <link rel="icon" type="image/png" href="assets/logo.png">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,900' rel='stylesheet' type='text/css'>
@@ -13,11 +14,23 @@
   <body>
     <div class="background_blue">
       <section class="content">
-        <div class="text_box">
+        <div class="result_box">
           <img id="logo" src="assets/logo_white.png">
-          <form id="ajax-contact" name="htmlform" method="post" action="/results.html">
-            <input type="text" id="recipe" name="recipe" placeholder="Search recipe" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search recipe'" required>
-          </form>
+
+          <div style="font-weight: 400; font-size: 1.5em; margin-bottom: 30px;"><i>Results for "chicken"</i></div>
+          <table>
+            <tr>
+              <td id="grid_box">one</td>
+              <td id="grid_box">two</td>
+              <td id="grid_box">three</td>
+            </tr>
+            <tr>
+              <td id="grid_box">one</td>
+              <td id="grid_box">two</td>
+              <td id="grid_box">three</td>
+            </tr>
+          </table>
+
         </div>
       </section>
     </div>
@@ -33,9 +46,6 @@
           </li>
           <li class="top_header_content_list_item">
             <a href="profile.html">Profile</a>
-          </li>
-          <li class="top_header_content_list_item">
-            <a href="recipe.html">Recipe - Test</a>
           </li>
         </ul>
       <h4 class="footer_text">© 2016 Mamalexa. All rights reserved.</h4>
