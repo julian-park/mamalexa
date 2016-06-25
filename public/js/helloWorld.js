@@ -1,4 +1,11 @@
+
+var HelloMessage = React.createClass({
+  render: function() {
+    return <div>Hello {this.props.name}</div>;
+  }
+});
+
 ReactDOM.render(
-  <h1>Hello, world!</h1>,
-  document.getElementById('example')
+  <HelloMessage name="John" />,
+  document.body
 );
