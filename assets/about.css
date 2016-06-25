@@ -16,3 +16,7 @@
 	-o-transition:all .1s ease-in-out;
 	transition:all .1s ease-in-out;}
 }
+
+.text_bot {
+	width: 500px;
+}
