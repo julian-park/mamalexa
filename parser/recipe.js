@@ -1,1 +1,1 @@
-var xmlhttp = new XMLHttpRequest()
+var xmlhttp=new XMLHttpRequest()
