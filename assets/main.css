@@ -254,9 +254,42 @@ form .required {
   *:-ms-input-placeholder {
       color: white;}
 
+.name {
+  font-size: 0.8em;
+}
+
+.result_box {
+  /*border: 1px solid #ffffff;*/
+  padding-top: 100px;
+  height: 100%;
+  width: 900px;
+  margin-bottom: 30px;
+  font-size: 1em;
+  font-weight: 300;
+  color:#ffffff;
+
+  text-align: center;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#grid_box {
+  width: 300px;
+  height: 250px;
+  border: 1px solid white;
+  margin-bottom: 20px;
+}
+
+
 /*
-
-
 
 #recipeInfo {
   z-index: 100;
