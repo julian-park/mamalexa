@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script>
+var request = require("request")
+var cheerio = require("cheerio")
+url = "http://allrecipes.com/search/results/?wt=chicken&sort=re"
+
+request(url, function(error, response, body) {
+    if (!error) {
+        var $ = cheerio.load(body);
+        var name = $("[class='grid-col__h3 grid-col__h3--recipe-grid']").html();
+        console.log(name);
+    }
+});
+</script>
+</head>
+<body>
+
+<h2>This is a heading</h2>
+
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+<button>Click me to hide paragraphs</button>
+
+</body>
+</html>
