@@ -254,6 +254,11 @@ form .required {
   *:-ms-input-placeholder {
       color: white;}
 
+.name {
+  font-size: 0.8em;
+}
+
+
 /*
 
 
