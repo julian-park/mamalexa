@@ -4,7 +4,7 @@ var app = express();
 // var db = require('mysql');
 var bodyParser = require('body-parser');
 var multer = require('multer');
-
+var path = require('path');
 // Configure app
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
@@ -21,9 +21,13 @@ function main() {
             // do something
         }
     });
+    // app.get('/', function(req, res) {
+    //     res.sendFile(path.join(__dirname + '/helloWorld.html'));
+
+    // });
 
     app.listen(3000, function() {
-        console.log("Listening on port 3000.")
+        console.log("Listening on port 3000.");
     });
 }
 
