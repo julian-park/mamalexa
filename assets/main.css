@@ -253,3 +253,14 @@ form .required {
       color: white;}
   *:-ms-input-placeholder {
       color: white;}
+
+/*
+
+
+
+#recipeInfo {
+  z-index: 100;
+  position: fixed;
+  top: 50px;
+  left: 50px;
+}*/
