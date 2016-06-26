@@ -304,8 +304,7 @@ button {
 	background-color: #3399ff;
 	border: 2px solid #ffffff;
 	border-radius: 5px;
-  margin-top: 40px;
-	margin: 20px;
+	margin: 30px;
 	color: #ffffff;
 	font-size: 0.8em;
 
@@ -320,8 +319,7 @@ button:hover {
 	background-color: #ffffff;
 	border: 2px solid #ffffff;
 	border-radius: 5px;
-  margin-top: 40px;
-	margin: 20px;
+	margin: 30px;
 	color: #3399ff;
 	font-size: 0.8em;
 }
