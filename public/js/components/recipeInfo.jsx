@@ -9,6 +9,7 @@ class RecipeInfo extends React.Component {
   }
 
   render () {
+
     return (
       <div>
         <h3> {this.props.recipeData.recipeName} </h3>
