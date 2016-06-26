@@ -140,7 +140,7 @@ header a:hover {
 }
 
 
-p {
+h3 {
 	text-align: right;
 	font-style: italic;
   font-family: "Open Sans", serif;
@@ -304,6 +304,7 @@ button {
 	background-color: #3399ff;
 	border: 2px solid #ffffff;
 	border-radius: 5px;
+  margin-top: 40px;
 	margin: 20px;
 	color: #ffffff;
 	font-size: 0.8em;
@@ -319,6 +320,7 @@ button:hover {
 	background-color: #ffffff;
 	border: 2px solid #ffffff;
 	border-radius: 5px;
+  margin-top: 40px;
 	margin: 20px;
 	color: #3399ff;
 	font-size: 0.8em;
