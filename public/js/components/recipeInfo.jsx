@@ -22,16 +22,16 @@ class RecipeInfo extends React.Component {
         <ul>
           {this.props.recipeData.steps.map((item, i)=>{
             var text = "Step #" + i + ": " + item;
-            return (i === this.state.currentStep ? 
-              <li key={i}> <h2> {text} </h2> </li> : 
+            return (i === this.state.currentStep ?
+              <li key={i}> <h2> {text} </h2> </li> :
               <li key={i}> {text} </li>);
           })}
         </ul>
-        <button 
-          type="button" 
+        <button
+          type="button"
           onClick={()=>{this.setState({currentStep: this.state.currentStep + 1})}}>
-            Next step 
-        </button>  
+            Next step
+        </button>
       </div>
     );
   }
