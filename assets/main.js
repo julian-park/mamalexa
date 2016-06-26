@@ -2,8 +2,6 @@ $(document).ready(function(){
   var searchQuery;
 
 
-  .val
-
   // Start with no visible subheader
   $("#subheader_about").fadeOut(0);
   $("#subheader_process").fadeOut(0);

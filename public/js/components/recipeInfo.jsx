@@ -9,6 +9,7 @@ class RecipeInfo extends React.Component {
   }
 
   render () {
+
     return (
       <div>
         <p> {this.props.recipeData.recipeName} </p>
