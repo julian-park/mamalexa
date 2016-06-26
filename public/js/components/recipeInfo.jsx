@@ -11,7 +11,7 @@ class RecipeInfo extends React.Component {
   render () {
     return (
       <div>
-        <h1 id=""> {this.props.recipeData.recipeName} </h1>
+        <p> {this.props.recipeData.recipeName} </p>
         <h1> INGREDIENTS </h1>
         <ul>
           {this.props.recipeData.ingredients.map((item, i)=>{
@@ -30,8 +30,9 @@ class RecipeInfo extends React.Component {
         <button
           type="button"
           onClick={()=>{this.setState({currentStep: this.state.currentStep + 1})}}>
-            Next step
+            Next Step
         </button>
+        <br>
         <button
           type="button"
           onClick={()=>{}}>
