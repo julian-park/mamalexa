@@ -14,8 +14,10 @@ class RecipeResults extends React.Component {
 
     {this.props.recipeList.results.map((item,index)=> {
       var ele = <td id="grid_box" key={index}>
-        <img src={item.picture} alt="Mountain View" style={{margin:'5px',width:'80%',height:'70%'}} />
-        <a href="/recipe.html"><h4>{item.name}</h4></a>
+        <a href="/recipe.html"> 
+          <img src={item.picture} alt="Mountain View" style={{margin:'5px',width:'80%',height:'70%'}} />
+          <h4>{item.name}</h4>
+        </a>
         {item.description}
       </td>
       if (index <= 5) {

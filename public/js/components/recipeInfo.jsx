@@ -32,7 +32,7 @@ class RecipeInfo extends React.Component {
           onClick={()=>{this.setState({currentStep: this.state.currentStep + 1})}}>
             Next Step
         </button>
-        <br>
+        
         <button
           type="button"
           onClick={()=>{}}>
