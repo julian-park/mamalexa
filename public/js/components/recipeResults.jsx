@@ -13,7 +13,7 @@ class RecipeResults extends React.Component {
     var i = 0;
 
     {this.props.recipeList.results.map((item,index)=> {
-      var ele = <td id="grid_box" key={index}>{item}</td>
+      var ele = <td id="grid_box" key={index}><a href="/recipe.html">{item}</a></td>
       if (index <= 5) {
         if (index !== 0 && index % 3 === 0) {
           recipeRows.push([ele])
