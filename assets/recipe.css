@@ -118,6 +118,7 @@ header a:hover {
 
 .text_box {
   /*border: 1px solid #ffffff;*/
+  padding-top: 70px;
   height: 100%;
   width: 700px;
   margin-bottom: 30px;
@@ -140,11 +141,13 @@ header a:hover {
 
 
 h1 {
-  font-family: "Playfair Display", serif;
+	text-align: left;
+  font-family: "Open Sans", serif;
   font-weight: 700;
-  font-size: 2.8em;
+  font-size: 2.5em;
   padding-left: 17px;
-  margin: 10px auto;
+  margin-bottom: -10px;
+  margin-top: 30px;
   color: #ffffff;
 
 }
@@ -258,29 +261,6 @@ form .required {
   font-size: 0.8em;
 }
 
-.result_box {
-  /*border: 1px solid #ffffff;*/
-  padding-top: 100px;
-  height: 100%;
-  width: 900px;
-  margin-bottom: 30px;
-  font-size: 1em;
-  font-weight: 300;
-  color:#ffffff;
-
-  text-align: center;
-
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
 #grid_box {
   width: 300px;
   height: 180px;
@@ -289,11 +269,25 @@ form .required {
 }
 
 
-/*
 
-#recipeInfo {
-  z-index: 100;
-  position: fixed;
-  top: 50px;
-  left: 50px;
-}*/
+
+
+
+
+
+ul {
+/* 	border: 1px solid white; */
+	list-style: none;
+	text-align: left;
+}
+
+li {
+/* 	border: 1px dashed white;
+ */
+}
+
+
+#recipe_name {
+	text-align: right;
+	font-style: italic;
+}
