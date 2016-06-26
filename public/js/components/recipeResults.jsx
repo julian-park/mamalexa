@@ -13,7 +13,11 @@ class RecipeResults extends React.Component {
     var i = 0;
 
     {this.props.recipeList.results.map((item,index)=> {
-      var ele = <td id="grid_box" key={index}><a href="/recipe.html">{item}</a></td>
+      var ele = <td id="grid_box" key={index}>
+        <img src={item.picture} alt="Mountain View" style={{margin:'5px',width:'80%',height:'70%'}} />
+        <a href="/recipe.html"><h4>{item.name}</h4></a>
+        {item.description}
+      </td>
       if (index <= 5) {
         if (index !== 0 && index % 3 === 0) {
           recipeRows.push([ele])
@@ -41,7 +45,14 @@ class RecipeResults extends React.Component {
 
 var recipeList = {
   searchQuery: "cookie",
-  results: ['chikkun 1', 'something', 'chicken 2', 'lotsa chikcne', 'more chicken', 'chikun 4 days', 'lol', 'bob']
+  results: [{name:'chikkun 1',picture:'http://www.taste.com.au/images/recipes/nb/2009/08/country-chicken-pie-17940_l.jpeg',description:'noodles noodles noodlesnoodles noodles noodlesnoodles noodles noodlesnoodles noodles noodles'},
+    {name:'chikkun 2',picture:'http://www.taste.com.au/images/recipes/nb/2009/08/country-chicken-pie-17940_l.jpeg',description:'noodles noodles noodlesnoodles noodles noodlesnoodles noodles noodlesnoodles noodles noodles'},
+    {name:'chikkun 3',picture:'http://www.taste.com.au/images/recipes/nb/2009/08/country-chicken-pie-17940_l.jpeg',description:'noodles noodles noodlesnoodles noodles noodlesnoodles noodles noodlesnoodles noodles noodles'},
+    {name:'chikkun 4',picture:'http://www.taste.com.au/images/recipes/nb/2009/08/country-chicken-pie-17940_l.jpeg',description:'noodles noodles noodlesnoodles noodles noodlesnoodles noodles noodlesnoodles noodles noodles'},
+    {name:'chikkun 5',picture:'http://www.taste.com.au/images/recipes/nb/2009/08/country-chicken-pie-17940_l.jpeg',description:'noodles noodles noodlesnoodles noodles noodlesnoodles noodles noodlesnoodles noodles noodles'},
+    {name:'chikkun 6',picture:'http://www.taste.com.au/images/recipes/nb/2009/08/country-chicken-pie-17940_l.jpeg',description:'noodles noodles noodlesnoodles noodles noodlesnoodles noodles noodlesnoodles noodles noodles'},
+    {name:'chikkun 11',picture:'http://www.taste.com.au/images/recipes/nb/2009/08/country-chicken-pie-17940_l.jpeg',description:'noodles noodles noodlesnoodles noodles noodlesnoodles noodles noodlesnoodles noodles noodles'},
+  ]
 }
 
 // some script to generate recipe data here!
