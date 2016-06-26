@@ -14,11 +14,13 @@ class RecipeResults extends React.Component {
 
     {this.props.recipeList.results.map((item,index)=> {
       var ele = <td id="grid_box" key={index}>{item}</td>
-      if (index !== 0 && index % 3 === 0) {
-        recipeRows.push([ele])
-        i++;
-      } else {
-        recipeRows[i].push(ele);
+      if (index <= 5) {
+        if (index !== 0 && index % 3 === 0) {
+          recipeRows.push([ele])
+          i++;
+        } else {
+          recipeRows[i].push(ele);
+        }
       }
     })}
     return (
@@ -38,7 +40,7 @@ class RecipeResults extends React.Component {
 
 
 var recipeList = {
-  searchQuery: "chicken",
+  searchQuery: "cookie",
   results: ['chikkun 1', 'something', 'chicken 2', 'lotsa chikcne', 'more chicken', 'chikun 4 days', 'lol', 'bob']
 }
 
