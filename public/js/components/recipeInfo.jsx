@@ -12,7 +12,7 @@ class RecipeInfo extends React.Component {
 
     return (
       <div>
-        <p> {this.props.recipeData.recipeName} </p>
+        <h3> {this.props.recipeData.recipeName} </h3>
         <h1> INGREDIENTS </h1>
         <ul>
           {this.props.recipeData.ingredients.map((item, i)=>{
