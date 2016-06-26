@@ -9,21 +9,26 @@ class RecipeResults extends React.Component {
   }
 
   render () {
+    var recipeRows = [[]];
+    var i = 0;
+
+    {this.props.recipeList.results.map((item,index)=> {
+      var ele = <td id="grid_box" key={index}>{item}</td>
+      if (index !== 0 && index % 3 === 0) {
+        recipeRows.push([ele])
+        i++;
+      } else {
+        recipeRows[i].push(ele);
+      }
+    })}
     return (
       <div>
-        <div style={{fontWeight: 400, fontSize: '1.5em', marginBottom: '30px'}}><i>Results for "chicken"</i></div>
+        <div style={{fontWeight: 400, fontSize: '1.5em', marginBottom: '30px'}}><i>Results for "{this.props.recipeList.searchQuery}"</i></div>
         <table>
           <tbody>
-          <tr>
-            <td id="grid_box"><a href="/recipe.html">one</a></td>
-            <td id="grid_box">two</td>
-            <td id="grid_box">three</td>
-          </tr>
-          <tr>
-            <td id="grid_box">one</td>
-            <td id="grid_box">two</td>
-            <td id="grid_box">three</td>
-          </tr>
+            {recipeRows.map((item, index)=>{
+              return (<tr key={index}>{item}</tr>)
+            })}
         </tbody>
         </table>
       </div>
@@ -32,19 +37,14 @@ class RecipeResults extends React.Component {
 }
 
 
-var recipeData = {
-  recipeName: 'cookie',
-  ingredients: [
-    'flour',
-    'sugar',
-    'somethin'
-  ],
-  steps: ['do something', 'do something else', 'youre done']
+var recipeList = {
+  searchQuery: "chicken",
+  results: ['chikkun 1', 'something', 'chicken 2', 'lotsa chikcne', 'more chicken', 'chikun 4 days', 'lol', 'bob']
 }
 
 // some script to generate recipe data here!
 
 ReactDOM.render(
-  <RecipeResults recipeData={recipeData} />,
+  <RecipeResults recipeList={recipeList} />,
   document.getElementById('recipeResults')
 );
